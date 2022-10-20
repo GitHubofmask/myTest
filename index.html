@@ -1,0 +1,182 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>个人注册</title>
+    <link rel="stylesheet" href="css/base.css" />
+    <link rel="stylesheet" href="css/register.css" />
+    <script src="./js/index.js"></script>
+  </head>
+  <body>
+    <header>
+      <div class="w">
+        <div class="logo">
+          <a href="#">
+            <img src="images/header.PNG" alt="" />
+          </a>
+        </div>
+      </div>
+    </header>
+    <div class="registerarea w">
+      <h3>
+        用户注册
+        <a href="#" class="help">帮助</a>
+      </h3>
+
+      <form action="submit.html" class="reg_form">
+        <ul>
+          <li>
+            <label for="ID">用户ID：</label>
+            <input
+              type="text"
+              class="inp"
+              id="ID"
+              placeholder="6-8位"
+              name="ID"
+            />
+            <span class="success">
+              <i class="success_icon"></i>
+            </span>
+            <span class="error" name="error">
+              <i class="error_icon"></i> 格式不正确，请从新输入
+            </span>
+          </li>
+          <li>
+            <label for="name">用户名：</label>
+            <input
+              type="text"
+              class="inp"
+              id="name"
+              placeholder="2-10位"
+              name="name"
+            />
+            <span class="success">
+              <i class="success_icon"></i>
+            </span>
+            <span class="error" name="error">
+              <i class="error_icon"></i> 格式不正确，请从新输入
+            </span>
+          </li>
+          <li>
+            <label for="password">登录密码：</label>
+            <input
+              type="password"
+              class="inp"
+              id="password"
+              placeholder="6-8位，不能与ID相同"
+              name="password"
+            />
+            <span class="success">
+              <i class="success_icon"></i>
+            </span>
+            <span class="error" name="error">
+              <i class="error_icon"></i> 格式不正确，请从新输入
+            </span>
+          </li>
+          <li>
+            <label for="confirmPwd">确认密码：</label>
+            <input
+              type="password"
+              class="inp"
+              id="confirmPwd"
+              name="confirmPwd"
+            />
+            <span class="success">
+              <i class="success_icon"></i>
+            </span>
+            <span class="error" name="error">
+              <i class="error_icon"></i> 密码不一致，请从新输入
+            </span>
+          </li>
+          <li>
+            <label for="birth">生日：</label>
+            <input
+              type="text"
+              class="inp"
+              id="birth"
+              placeholder="yyyy-mm-dd,1900-2029"
+              name="birth"
+            />
+            <span class="success">
+              <i class="success_icon"></i>
+            </span>
+            <span class="error" name="error">
+              <i class="error_icon"></i> 格式不正确，请从新输入
+            </span>
+          </li>
+          <li>
+            <label>学历：</label>
+            <input type="radio" class="radio" name="degree" value="专科" />专科
+            <input type="radio" class="radio" name="degree" value="本科" />本科
+            <input
+              type="radio"
+              class="radio"
+              name="degree"
+              value="硕士研究生"
+            />硕士研究生
+            <input
+              type="radio"
+              class="radio"
+              name="degree"
+              value="博士研究生"
+            />博士研究生
+            <input type="radio" class="radio" name="degree" value="其他" />其他
+          </li>
+          <li>
+            <label for="e-mail">E-mail：</label>
+            <input type="text" class="inp" id="e-mail" name="email" />
+            <span class="success">
+              <i class="success_icon"></i>
+            </span>
+            <span class="error" name="error">
+              <i class="error_icon"></i> 格式不正确，请从新输入
+            </span>
+          </li>
+          <li>
+            <label for="address">地址：</label>
+            <input type="text" class="inp" id="address" name="address" />
+            <span class="success">
+              <i class="success_icon"></i>
+            </span>
+            <span class="error">
+              <i class="error_icon"></i> 格式不正确，请从新输入
+            </span>
+          </li>
+          <li>
+            <label for="phone">电话：</label>
+            <input
+              type="text"
+              class="inp"
+              id="phone"
+              placeholder="1(34578)+9个数字"
+              name="phone"
+            />
+            <span class="success">
+              <i class="success_icon"></i>
+            </span>
+            <span class="error" name="error">
+              <i class="error_icon"></i> 格式不正确，请从新输入
+            </span>
+          </li>
+          <li>
+            <label id="Note">备注：</label>
+            <textarea name="note" id="Note" cols="30" rows="10"></textarea>
+          </li>
+
+          <li>
+            <input type="submit" value="提交" class="btn" id="submit" />
+            <input type="reset" class="reset" />
+          </li>
+        </ul>
+      </form>
+    </div>
+    <footer>
+      <div class="mod_copyright">
+        <div class="links">联系邮箱：2312243743@qq.com</div>
+        <div class="copyright">版权所有<a href="">计算机202 张光熙</a></div>
+      </div>
+    </footer>
+  </body>
+</html>
